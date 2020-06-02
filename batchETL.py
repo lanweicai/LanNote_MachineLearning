@@ -14,6 +14,7 @@ def batch():
     cf=Config(SCHED_CONF_HOME+'/config.ini')
     odsdb=cf.getdics("ods")
     # sql='''SELECT d.name FROM sysobjects d where d.xtype= 'U' and d.name like 'STG%' '''
+    # sql='''SELECT d.name FROM sysobjects d where d.xtype= 'U' and d.name like 'STG%' '''
     sql='''SELECT d.name FROM sysobjects d where d.xtype= 'U' and d.name like 'aa' '''
     
     db=SqlServer(odsdb)
